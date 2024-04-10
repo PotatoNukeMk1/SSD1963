@@ -7,19 +7,20 @@
 #include <lvgl.h>
 #include <demos/lv_demos.h>
 
-#define LCD_DATA0 18
-#define LCD_DATA1 17
-#define LCD_DATA2 16
-#define LCD_DATA3 15
-#define LCD_DATA4 7
-#define LCD_DATA5 6
-#define LCD_DATA6 5
-#define LCD_DATA7 4
-#define LCD_PCLK  11
-#define LCD_CS    14
-#define LCD_DC    13
-#define LCD_RST   10
-#define LCD_BL    47
+//          ESP32-S3 // SSD1963
+#define LCD_DATA0 18 // D0
+#define LCD_DATA1 17 // D1
+#define LCD_DATA2 16 // D2
+#define LCD_DATA3 15 // D3
+#define LCD_DATA4 7  // D4
+#define LCD_DATA5 6  // D5
+#define LCD_DATA6 5  // D6
+#define LCD_DATA7 4  // D7
+#define LCD_PCLK  11 // WR
+#define LCD_CS    14 // CS
+#define LCD_DC    13 // D/C
+#define LCD_RST   10 // RESET
+#define LCD_BL    47 // Backlight
 #define LCD_H_RES 800
 #define LCD_V_RES 480
 #define DISP_BUF_SIZE (LCD_H_RES * (LCD_V_RES / 10) * (LV_COLOR_DEPTH / 8))
